@@ -1,0 +1,1 @@
+# termsconditionsforpick-buy
