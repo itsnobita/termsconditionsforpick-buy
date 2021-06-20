@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <body style="background-color:red">
 <style>
 .backround {
 float: left;
@@ -22,6 +23,20 @@ padding: 5px;
   height: 50px;
   margin-left:0;
   border: solid 1px black;
+}
+  .backround:hover {
+    position: relative;
+background-color:white;
+  top: -400px;
+ 
+
+  
+ 
+
+width:400px;
+height:700px;
+
+
 }
 .backround2 {
   background-image: url("02.jpeg");
@@ -45,20 +60,31 @@ padding: 5px;
 }
 
 </style>
-<ul><div class="backround2" style="background-image:url('01.jpeg');">
+<ul><div class="backround2" onmouseover="bigImg1(this)"  onmouseout="normalImg1(this)" style="background-color:white;background-image:url('01.jpeg');">
   </div></ul>
   &nbsp
 
 <ul>
-<div class="backround" style="background-image: url('01.jpeg');">
+<div class="backround" style="background-color:white;background-image: url('01.jpeg');">
 </div>
 
-<div class="backround" style="background-image: url('02.jpeg');">
+<div class="backround" style="background-color:white;background-image: url('02.jpeg');">
 </div>
-<div class="backround" style="background-image: url('03.jpeg');">
+<div class="backround" style="background-color:white;background-image: url('03.jpeg');">
 </div>
 </ul>
+<script>
+function bigImg1(x) {
+  x.style.height = "900px";
+  x.style.width = "600px";
+}
 
+function normalImg1(x) {
+  x.style.height = "400px";
+  x.style.width = "170px";
+}
+
+</script>
 
 </body>
 </html>
